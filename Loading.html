@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        body{
+            background-color: rgb(255,120,100);
+            margin:0;
+            padding:0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle{
+            display: flex;
+            animation: circle 2s infinite;
+        }
+        .loading1{
+            border-radius: 500px 0 0 0;
+            height: 30px;
+            width: 30px;
+            background-color: white;
+            animation: loading1 2s infinite;
+        }
+        .loading2{
+            transform: rotate(90deg);
+            border-radius: 500px 0 0 0;
+            height: 30px;
+            width: 30px;
+            background-color: rgb(5,253,191);
+            animation: loading2 2s infinite;
+        }
+        .loading3{
+            border-radius: 500px 0 0 0;
+            transform: rotate(-90deg);
+            margin-left: -60px;
+            margin-top: 30px;
+            height: 30px;
+            width: 30px;
+            background-color: rgb(255,64,64);
+            animation: loading3 2s infinite;
+        }
+        .loading4{
+            transform: rotate(-180deg);
+            margin-top: 30px;
+            border-radius: 500px 0 0 0;
+            height: 30px;
+            width: 30px;
+            background-color: rgb(255,220,5);
+        }
+        @keyframes circle{
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+@keyframes loading3{
+    50%{
+        margin-top: 100px;
+    }
+}
+@keyframes loading2{
+    50%{
+        margin-top: -30px;
+        margin-right: 40px;
+    }
+}
+@keyframes loading1{
+    50%{
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <div class="loading1"></div>
+        <div class="loading2"></div>
+        <div class="loading3"></div>
+        <div class="loading4"></div>
+    </div>
+</body>
+</html>
